@@ -3,7 +3,6 @@ import pickle
 import numpy as np
 import os
 from werkzeug.utils import secure_filename
-from pyAudioAnalysis import audioTrainTest as aT
 import librosa
 
 app = Flask(__name__)
@@ -45,16 +44,19 @@ def predict():
         try:
             # Load audio file with librosa
             audio, sr = librosa.load(file_path, sr=None)
-            # Extract 10 MFCC features instead of the default 20
-            feature_vector = librosa.feature.mfcc(y=audio, sr=sr, n_mfcc=10).mean(axis=1)
-            data = np.array(feature_vector).reshape(1, -1)
+            # Extract Mel Spectrogram features instead of MFCC
+            mel_spectrogram = librosa.feature.melspectrogram(y=audio, sr=sr, n_mels=40)
+            mel_spectrogram_db = librosa.power_to_db(mel_spectrogram, ref=np.max)
+            mel_spectrogram_mean = np.mean(mel_spectrogram_db, axis=1)
+            
+            data = np.array(mel_spectrogram_mean).reshape(1, -1)
 
             # Make prediction
             prediction = model.predict(data)[0]
             confidence = max(model.predict_proba(data)[0])
 
-            # Map prediction to label
-            labels = {0: "fan", 1: "gearbox", 2: "pump", 3: "valve"}
+            # Map prediction to label (Ensure your label mapping matches your training data)
+            labels = {0: "gearbox", 1: "fan", 2: "pump", 3: "valve"}
             label = labels.get(prediction, "Unknown")
 
             # Return result
