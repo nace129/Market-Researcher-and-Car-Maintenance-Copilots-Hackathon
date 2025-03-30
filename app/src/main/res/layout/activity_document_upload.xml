@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Step 1: Upload Section -->
+    <TextView
+        android:id="@+id/pdf_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload a PDF document"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="96dp"/>
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose PDF"/>
+
+    <!-- Step 2: Gemini-style QA Panel -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginVertical="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gemini QA Session"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/input_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ask a question..."
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btn_ask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ask"/>
+
+    <TextView
+        android:id="@+id/tv_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="8dp"
+        android:background="#F0F0F0"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

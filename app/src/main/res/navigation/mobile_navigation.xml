@@ -15,7 +15,16 @@
         android:id="@+id/navigation_dashboard"
         android:name="com.example.market_researcher_and_car_maintenance_copilots.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_dashboard">
+    <!-- Add actions to navigate -->
+<!--    <action-->
+<!--        -->
+<!--        android:id="@+id/action_homeFragment_to_documentUploadActivity"-->
+<!--        app:destination="@id/documentUploadActivity" />-->
+<!--    <action-->
+<!--        android:id="@+id/action_homeFragment_to_queryActivity"-->
+<!--        app:destination="@id/queryActivity" />-->
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_notifications"
