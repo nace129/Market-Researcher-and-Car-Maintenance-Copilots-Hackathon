@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,9 +14,10 @@
         android:layout_height="wrap_content"
         android:text="Upload Audio File"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVerticalBias="0.4" /> <!-- Adjusted to push the button towards the center -->
+        app:layout_constraintVertical_bias="0.4"/> <!-- Fixed attribute name -->
 
     <!-- Call ML Button -->
     <Button
@@ -26,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@id/uploadButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"/>
 
     <!-- Prediction Result Display -->
     <TextView
@@ -35,6 +37,7 @@
         android:layout_height="wrap_content"
         android:text="Prediction: N/A"
         android:textSize="18sp"
+        android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@id/callMLButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
