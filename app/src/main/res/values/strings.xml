@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Market-Researcher-and-Car-Maintenance-Copilots</string>
-    <string name="title_home">Home</string>
+
+    <string name="title_home">API</string>
     <string name="title_dashboard">ThinkPDF</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="gemini_api_key">AIzaSyCVtKW4mdZujSF7dRJHTn6XKkRS9dcd0lA</string>
+    <string name="title_soundanalysis">SoundAnalysis</string>
+    <string name="gemini_api_key">Genimi_Key</string>
 </resources>

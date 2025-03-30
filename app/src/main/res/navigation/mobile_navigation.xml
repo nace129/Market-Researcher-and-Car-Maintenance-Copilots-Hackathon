@@ -27,8 +27,8 @@
     </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.market_researcher_and_car_maintenance_copilots.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_sound_analysis"
+        android:name="com.example.market_researcher_and_car_maintenance_copilots.ui.soundanalysis.SoundAnalysisFragment"
+        android:label="Sound Analysis"
+        tools:layout="@layout/fragment_sound_analysis" />
 </navigation>

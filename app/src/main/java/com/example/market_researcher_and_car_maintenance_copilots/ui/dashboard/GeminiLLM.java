@@ -74,7 +74,7 @@ public class GeminiLLM {
             os.close();
 
             if (conn.getResponseCode() == 429) {
-                return "Gemini API quota is still updating. Please wait a few minutes and try again.";
+                return "Gemini API rate Quota Exceeded";
             }
 
             // Read response

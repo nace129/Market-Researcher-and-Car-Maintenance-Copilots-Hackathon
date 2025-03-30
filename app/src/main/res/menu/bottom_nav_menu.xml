@@ -3,22 +3,24 @@
 
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        android:title="@string/title_home"
+    />
 
 <!--    <item-->
 <!--        android:id="@+id/navigation_dashboard"-->
 <!--        android:icon="@drawable/ic_dashboard_black_24dp"-->
 <!--        android:title="@string/title_dashboard" />-->
     <item
+
         android:id="@+id/navigation_thinkpdf"
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="ThinkPDF" />
 
 
+
     <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications" />
+        android:id="@+id/navigation_sound_analysis"
+        android:icon="@drawable/baseline_music_note_24"
+        android:title="Sound Analysis" />
 
 </menu>
