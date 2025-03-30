@@ -35,7 +35,8 @@ dependencies {
 
     implementation libs.appcompat
     implementation libs.material
-    implementation libs.constraintlayout
+    implementation libs.constraintlayout  // Make sure this is properly configured
+    //implementation 'androidx.constraintlayout:constraintlayout:2.1.0'  // Adding this explicitly
     implementation libs.lifecycle.livedata.ktx
     implementation libs.lifecycle.viewmodel.ktx
     implementation libs.navigation.fragment

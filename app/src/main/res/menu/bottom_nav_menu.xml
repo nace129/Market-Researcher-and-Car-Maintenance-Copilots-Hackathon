@@ -10,8 +10,10 @@
         android:id="@+id/navigation_dashboard"
         android:title="@string/title_dashboard" />
 
+
     <item
-        android:id="@+id/navigation_notifications"
-        android:title="@string/title_notifications" />
+        android:id="@+id/navigation_sound_analysis"
+        android:icon="@drawable/baseline_music_note_24"
+        android:title="Sound Analysis" />
 
 </menu>

@@ -1,0 +1,12 @@
+Flask
+numpy
+scikit-learn
+librosa
+pyAudioAnalysis
+tqdm
+eyed3
+pydub
+matplotlib
+imbalanced-learn
+plotly
+
